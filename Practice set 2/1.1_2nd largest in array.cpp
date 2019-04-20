@@ -15,12 +15,12 @@ else{
   second_largest=a[0];
 }
 for(i=2; i<n; i++){
-  //cout<<"a[i]= "<<a[i]<<"Largest="<<largest<<" 2nd largest="<<second_largest<<endl;
+  cout<<"a[i]= "<<a[i]<<"Largest="<<largest<<" 2nd largest="<<second_largest<<endl;
   if(a[i]>largest){
     second_largest=largest;
     largest=a[i];
   }
-  else if(a[i]>second_largest){
+  else if(a[i]>second_largest && a[i]<largest){
     second_largest=a[i];
   }
 }
